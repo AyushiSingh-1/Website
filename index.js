@@ -27,20 +27,23 @@ app.get("/signup", (req,res) =>
 
 });
 
-app.post("/signup",async(req, res) => {
-const data =  {
-    name: req.body.firstname,
-    password: req.body.password
-}
-const existingUser = await collection.findOne({name: data.name});
-if (existingUser){
-    res.send("User already exists. Please choose a different username.");
-}else{
+app.post("/signup", async (req, res) => {
+    const existingUser = await collection.findOne({ name: req.body.firstname });
+    if (existingUser) {
+        return res.send("User already exists. Please choose a different username.");
+    }
 
-const userdata= await collection.insertMany(data);
-console.log(userdata);
-}
-{ res.render("login"); }
+    // Hash the password
+    const saltRounds = 10;
+    const hashedPassword = await bcrypt.hash(req.body.password, saltRounds);
+
+    const data = {
+        name: req.body.firstname,
+        password: hashedPassword // Save the HASHED password
+    }
+
+    await collection.insertMany(data);
+    res.render("login");
 });
 
 app.post("/login", async(req,res ) =>
