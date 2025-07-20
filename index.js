@@ -46,22 +46,26 @@ app.post("/signup", async (req, res) => {
     res.render("login");
 });
 
-app.post("/login", async(req,res ) =>
-{
-try{
-const check = await collection.findOne({name: req.body.firstname});
-if (!check){
-    req.send("wrong details");
-}
-const isPasswordMatch = await bcrypt.compare(req.body.password, check.password);
-if (!isPasswordMatch){
-   req.send("wrong password");
-}}
-catch{
-    res.render("home");
+app.post("/login", async (req, res) => {
+    try {
+        const check = await collection.findOne({ name: req.body.firstname });
+        if (!check) {
+            // Use res to send a response
+            return res.send("wrong details"); 
+        }
+        const isPasswordMatch = await bcrypt.compare(req.body.password, check.password);
+        if (!isPasswordMatch) {
+            // Use res here as well
+            return res.send("wrong password");
+        }
+        // If login is successful, you should probably render a user dashboard or the homepage
+        res.render("home"); // Or a different page for logged-in users
 
-}}
-);
+    } catch (error) { // It's good practice to catch the specific error
+        console.log(error);
+        res.send("An error occurred");
+    }
+});
 
 const port = process.env.PORT || 3000;
 app.listen(port,()=> {
