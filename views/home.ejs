@@ -3,8 +3,8 @@
 <head>
 <title>Scintilla</title>
 <meta charset="utf-8" />
-<meta name="viewpoint" content="width=device-width,initial-scal=1.0">
-<meta http-equip="X-UA-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
 <link rel="stylesheet" href="style.css" media="screen" type="text/css" />
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -15,454 +15,315 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 <style>
     h1,h2,h3,h4,h5,h6,body
-{
-    
-    font-family: "Karma", sans-serif;
-    font-size: 20px;
-}
-
-    </style>
+    {
+        font-family: "Karma", sans-serif;
+        font-size: 20px;
+    }
+    /* Simple button styling to match your site */
+    .btn {
+        display: inline-block;
+        padding: 8px 16px;
+        font-size: 16px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+        background-color: #81d8d0;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 4px #999;
+    }
+    .btn:hover {
+        background-color: #61c4ba;
+        color: white;
+        text-decoration: none;
+    }
+    .btn:active {
+        background-color: #50b3a9;
+        box-shadow: 0 2px #666;
+        transform: translateY(2px);
+    }
+</style>
 </head>
 
 <body>
 
 <section id="nav-bar">
-<h1 style="text-align: center;  font-size: 50px; font-weight: bolder; font-family:Caveat, sans-serif; background-color: #81d8d0;">Scintilla</h1>
-		<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #81d8d0;">
-  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    			<span class="navbar-toggler-icon"></span>
-  		</button>
-  		<div class="topnav">
-
-  		<a style="color:black;" class="active" href="/">Home</a>
-        
-		</div> 
-        
-  		<div class="collapse navbar-collapse" id="navbarNav">
-  		
-    		<ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a style="color:black;" class="nav-link" href="signup">Signup</a>
-                  </li>
-                  <li class="nav-item">
-                    <a style="color:black;" class="nav-link" href="login">Login</a>
-                  </li>
-      		<li class="nav-item">
-        		<a style="color:black;" class="nav-link" href="#about">About Us</a>
-      		</li>
-      		
-      		<li class="nav-item">
-        		<a style="color:black;" class="nav-link" href="#services">Our Services</a>
-      		</li>
-      		
-      		<li class="nav-item">
-        		<a style="color:black;" class="nav-link" href="#team" tabindex="-1" aria-disabled="true">Blog Posts</a>
-      		</li>
-      		<li class="nav-item">
-        		<a style="color:black;" class="nav-link" href="#contact">Contact</a>
-      		</li>
-      		
-      		
-    		</ul>
-  		</div>
-		</nav>
-
-
-	<div class="slider">
-		<div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active" data-interval="10000">
-      <img src="https://www.miabytanishq.com/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Mia-Library/default/dw06754185/images/homepage/herobanner/couple-rings-desktop-image.jpg" class="d-block w-100" alt="..." style="width:1440;height:400px;">
+<h1 style="text-align: center; font-size: 50px; font-weight: bolder; font-family:Caveat, sans-serif; background-color: #81d8d0;">Scintilla</h1>
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #81d8d0;">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a style="color:black;" class="nav-link" href="/">Home</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a style="color:black;" class="nav-link" href="/signup">Signup</a>
+            </li>
+            <li class="nav-item">
+                <a style="color:black;" class="nav-link" href="/login">Login</a>
+            </li>
+            <li class="nav-item">
+                <a style="color:black;" class="nav-link" href="/cart">Cart</a>
+            </li>
+            <li class="nav-item">
+                <a style="color:black;" class="nav-link" href="#about">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a style="color:black;" class="nav-link" href="#services">Our Services</a>
+            </li>
+            <li class="nav-item">
+                <a style="color:black;" class="nav-link" href="#team" tabindex="-1" aria-disabled="true">Blog Posts</a>
+            </li>
+            <li class="nav-item">
+                <a style="color:black;" class="nav-link" href="#contact">Contact</a>
+            </li>
+        </ul>
     </div>
-    <div class="carousel-item" data-interval="2000">
-		<img src="https://cf-cdn.pcjeweller.com/public/uploads/banner/banner-2__1181714597782739688__1195773011782459538.webp" class="d-block w-100" alt="..." style="width:1440;height:400px;">
-	  </div>
-   
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-	</div>
-		<br>
-<br>
-<br>
-
-
-
-
-	<!------Featured Categories----->
-<section class="new-arrivals" >
-<div id="site">
-	<div class="container">
-		<div class="title-box">
-		<h2 style="font-size: larger;"><b>Top Trending Collections</b></h2>
-		</div>
-        <br>
-		<div class="row">
-			<div class="col-md-3">
-			<div class="product-top">
-                <img src="https://media.tiffany.com/is/image/Tiffany/EcomBrowseM/tiffany-novo-oval-brilliant-engagement-ring-with-a-pav-diamond-platinum-band-70912392_1031925_ED.jpg?defaultImage=NoImageAvailableInternal&fmt=webp" alt="Diamond Ring" style="width:100%">
-
-				<div class="overlay-right">
-
-				</div>
-			</div>
-			
-			
-			<div class="product-bottom text-center">
-
-			<h3>Oval Brilliant Ring</h3>
-			<div class="product-description" data-name="Mirror" data-price="10">
-				
-				<p class="product-price">&#8377; 1999</p>
-				<form class="add-to-cart" action="cart.ejs" method="post">
-							<div>
-								<label for="qty-2">Quantity</label>
-								<input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
-							</div>
-							<p><input type="submit" value="Add to cart" class="btn" /></p>
-						</form>
-						
-			</div>
-			</div>
-			</div>
-
-			
-			<div class="col-md-3">
-			<div class="product-top">
-                <img src="https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-hardwearlarge-link-bracelet-70751046_1069059_ED_M.jpg?&op_usm=1.0,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp" alt="Bracelet" style="width:100%">
-
-				<div class="overlay-right">
-					
-				</div>
-			</div>
-			
-			
-			<div class="product-bottom text-center">
-
-			<h3>Large Link Bracelet</h3>
-			<div class="product-description" data-name="Bracelet" data-price="1599">
-				
-				<p class="product-price">&#8377; 1599</p>
-				<form class="add-to-cart" action="cart.html" method="post">
-							<div>
-								<label for="qty-2">Quantity</label>
-								<input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
-							</div>
-							<p><input type="submit" value="Add to cart" class="btn" /></p>
-						</form>
-			</div>
-			</div>
-			</div>
-
-
-
-			<div class="col-md-3">
-			<div class="product-top">
-                <img src="https://media.tiffany.com/is/image/Tiffany/EcomItemL2/paloma-picassoolive-leaf-climber-earrings-60702551_1026018_ED.jpg?&op_usm=2.0,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp" alt="Earrings" style="width:100%">
-
-				<div class="overlay-right">
-					
-				</div>
-			</div>
-			
-			
-			<div class="product-bottom text-center">
-			
-			<h3>Olive Leaf Earrings</h3>
-			<div class="product-description" data-name="Earrings" data-price="1499">
-				
-				<p class="product-price">&#8377; 1499</p>
-				<form class="add-to-cart" action="cart.html" method="post">
-							<div>
-								<label for="qty-2">Quantity</label>
-								<input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
-							</div>
-							<p><input type="submit" value="Add to cart" class="btn" /></p>
-						</form>
-						
-			</div>
-			</div>
-			</div>
-
-
-
-			<div class="col-md-3">
-			<div class="product-top">
-                <img src="https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-hardweargraduated-link-necklace-70606097_1062142_ED.jpg?&op_usm=1.0,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp" alt="Necklace" style="width:100%">
-
-				<div class="overlay-right">
-					
-				</div>
-			</div>
-            <div class="product-bottom text-center">
-		
-			<h3>Link Necklace</h3>
-			<div class="product-description" data-name="Necklace" data-price="2999">
-				
-				<p class="product-price">&#8377; 2999</p>
-				<form class="add-to-cart" action="cart.html" method="post">
-							<div>
-								<label for="qty-2">Quantity</label>
-								<input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
-							</div>
-							<p><input type="submit" value="Add to cart" class="btn" /></p>
-						</form>
-						
-			</div>
-			</div>
-			</div>			
-
-		</div>
-
-
-
-	<div class="row">
-			<div class="col-md-3">
-			<div class="product-top">
-                <img src="https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-co-schlumbergersixteen-stone-ring-11715966_1031820_ED.jpg?&op_usm=1.75,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp" alt="Ring" style="width:100%">
-
-				<div class="overlay-right">
-	
-				</div>
-			</div>
-			
-			
-			<div class="product-bottom text-center">
-	
-			<h3>Sixteen Stone Ring</h3>
-			<div class="product-description" data-name="Earrings" data-price="3199">
-				
-				<p class="product-price">&#8377; 3199</p>
-				<form class="add-to-cart" action="cart.html" method="post">
-							<div>
-								<label for="qty-2">Quantity</label>
-								<input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
-							</div>
-							<p><input type="submit" value="Add to cart" class="btn" /></p>
-						</form>
-						
-			</div>
-			</div>
-			</div>
-
-			
-			<div class="col-md-3">
-			<div class="product-top">
-                <img src="https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-knotdouble-row-hinged-bangle-68890268_1030923_ED_M.jpg?&op_usm=2.0,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp" alt="Bracelet" style="width:100%">
-
-				<div class="overlay-right">
-					
-				</div>
-			</div>
-			
-			
-			<div class="product-bottom text-center">
-			
-			<h3>Double Hinged Bangle</h3>
-			<div class="product-description" data-name="Bracelet" data-price="1999">
-				
-				<p class="product-price">&#8377; 1999</p>
-				<form class="add-to-cart" action="cart.html" method="post">
-							<div>
-								<label for="qty-2">Quantity</label>
-								<input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
-							</div>
-							<p><input type="submit" value="Add to cart" class="btn" /></p>
-						</form>
-						
-			</div>
-			</div>
-			</div>
-
-
-
-			<div class="col-md-3">
-			<div class="product-top">
-                <img src="https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-hardweartriple-drop-link-earrings-70607115_1034747_ED.jpg?&op_usm=2.0,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp" alt="Earrings" style="width:100%">
-
-				<div class="overlay-right">
-
-				</div>
-			</div>
-			
-			
-			<div class="product-bottom text-center">
-			
-			<h3>Triple Drop Link Earrings</h3>
-			<div class="product-description" data-name="Earrings" data-price="1699">
-				
-				<p class="product-price">&#8377; 1699</p>
-				<form class="add-to-cart" action="cart.html" method="post">
-							<div>
-								<label for="qty-2">Quantity</label>
-								<input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
-							</div>
-							<p><input type="submit" value="Add to cart" class="btn" /></p>
-						</form>
-						
-			</div>
-			</div>
-			</div>
-
-
-
-			<div class="col-md-3">
-			<div class="product-top">
-                <img src="https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-lockpendant-72355776_1060160_ED.jpg?&op_usm=1.0,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp" alt="Necklace" style="width:100%">
-
-				<div class="overlay-right">
-			
-				</div>
-			</div>
-			
-			
-			<div class="product-bottom text-center">
-			
-			<h3>Pendant</h3>
-			<div class="product-description" data-name="Pendant" data-price="2599">
-				
-				<p class="product-price">&#8377; 2599</p>
-				<form class="add-to-cart" action="cart.html" method="post">
-							<div>
-								<label for="qty-2">Quantity</label>
-								<input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
-							</div>
-							<p><input type="submit" value="Add to cart" class="btn" /></p>
-						</form>
-						
-			</div>
-			</div>
-			</div>	
-		</div>
-
-	</div>
-</div>
+</nav>
 </section>
-	<br>
-    <br>
-    <br>
-		
-<!------Services Section------->		
+
+<div class="slider">
+    <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-interval="10000">
+                <img src="https://www.miabytanishq.com/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Mia-Library/default/dw06754185/images/homepage/herobanner/couple-rings-desktop-image.jpg" class="d-block w-100" alt="..." style="width:1440;height:400px;">
+            </div>
+            <div class="carousel-item" data-interval="2000">
+                <img src="https://cf-cdn.pcjeweller.com/public/uploads/banner/banner-2__1181714597782739688__1195773011782459538.webp" class="d-block w-100" alt="..." style="width:1440;height:400px;">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+<br><br><br>
+
+<!------Featured Categories----->
+<section class="new-arrivals">
+    <div id="site">
+        <div class="container">
+            <div class="title-box">
+                <h2 style="font-size: larger;"><b>Top Trending Collections</b></h2>
+            </div>
+            <br>
+            <div class="row">
+                <!-- Product 1 -->
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <img src="https://media.tiffany.com/is/image/Tiffany/EcomBrowseM/tiffany-novo-oval-brilliant-engagement-ring-with-a-pav-diamond-platinum-band-70912392_1031925_ED.jpg?defaultImage=NoImageAvailableInternal&fmt=webp" alt="Diamond Ring" style="width:100%">
+                    </div>
+                    <div class="product-bottom text-center">
+                        <h3>Oval Brilliant Ring</h3>
+                        <p class="product-price">&#8377; 1999</p>
+                        <a href="/cart?id=101" class="btn">Add to cart</a>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <img src="https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-hardwearlarge-link-bracelet-70751046_1069059_ED_M.jpg?&op_usm=1.0,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp" alt="Bracelet" style="width:100%">
+                    </div>
+                    <div class="product-bottom text-center">
+                        <h3>Large Link Bracelet</h3>
+                        <p class="product-price">&#8377; 1599</p>
+                        <a href="/cart?id=102" class="btn">Add to cart</a>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <img src="https://media.tiffany.com/is/image/Tiffany/EcomItemL2/paloma-picassoolive-leaf-climber-earrings-60702551_1026018_ED.jpg?&op_usm=2.0,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp" alt="Earrings" style="width:100%">
+                    </div>
+                    <div class="product-bottom text-center">
+                        <h3>Olive Leaf Earrings</h3>
+                        <p class="product-price">&#8377; 1499</p>
+                        <a href="/cart?id=103" class="btn">Add to cart</a>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <img src="https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-hardweargraduated-link-necklace-70606097_1062142_ED.jpg?&op_usm=1.0,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp" alt="Necklace" style="width:100%">
+                    </div>
+                    <div class="product-bottom text-center">
+                        <h3>Link Necklace</h3>
+                        <p class="product-price">&#8377; 2999</p>
+                        <a href="/cart?id=104" class="btn">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Product 5 -->
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <img src="https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-co-schlumbergersixteen-stone-ring-11715966_1031820_ED.jpg?&op_usm=1.75,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp" alt="Ring" style="width:100%">
+                    </div>
+                    <div class="product-bottom text-center">
+                        <h3>Sixteen Stone Ring</h3>
+                        <p class="product-price">&#8377; 3199</p>
+                        <a href="/cart?id=105" class="btn">Add to cart</a>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <img src="https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-knotdouble-row-hinged-bangle-68890268_1030923_ED_M.jpg?&op_usm=2.0,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp" alt="Bracelet" style="width:100%">
+                    </div>
+                    <div class="product-bottom text-center">
+                        <h3>Double Hinged Bangle</h3>
+                        <p class="product-price">&#8377; 1999</p>
+                        <a href="/cart?id=106" class="btn">Add to cart</a>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <img src="https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-hardweartriple-drop-link-earrings-70607115_1034747_ED.jpg?&op_usm=2.0,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp" alt="Earrings" style="width:100%">
+                    </div>
+                    <div class="product-bottom text-center">
+                        <h3>Triple Drop Link Earrings</h3>
+                        <p class="product-price">&#8377; 1699</p>
+                        <a href="/cart?id=107" class="btn">Add to cart</a>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <img src="https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-lockpendant-72355776_1060160_ED.jpg?&op_usm=1.0,1.0,6.0&$cropN=0.1,0.1,0.8,0.8&defaultImage=NoImageAvailableInternal&&defaultImage=NoImageAvailableInternal&fmt=webp" alt="Necklace" style="width:100%">
+                    </div>
+                    <div class="product-bottom text-center">
+                        <h3>Pendant</h3>
+                        <p class="product-price">&#8377; 2599</p>
+                        <a href="/cart?id=108" class="btn">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<br><br><br>
+
+<!------Services Section------->
 <section id="services">
-	
     <div class="container">
         <h1 style="font-size: larger;"><b>Our Services</b></h1>
-        <div class="row services" >
-            <div class= "col-md-4 text-center">
+        <div class="row services">
+            <div class="col-md-4 text-center">
                 <div class="icon">
-                <i class="fa fa-phone"></i>
+                    <i class="fa fa-phone"></i>
                 </div>
                 <h3> 24/7 Support</h3>
                 <p>on order related queries</p>
             </div>
-        
             <div class="col-md-4 text-center">
                 <div class="icon">
-                <i class="fa fa-shopping-cart"></i>
+                    <i class="fa fa-shopping-cart"></i>
                 </div>
                 <h3> Return within 30 days</h3>
                 <p>of receiving your order</p>
             </div>
-        
             <div class="col-md-4 text-center">
                 <div class="icon">
-                <i class="fa fa-truck"></i>
+                    <i class="fa fa-truck"></i>
                 </div>
                 <h3>Get free delivery</h3>
                 <p>on orders above 999</p>
             </div>
         </div>
     </div>
-
 </section>
+<br><br>
 
-<br>
-<br>
-<!------About Section------->	
+<!------About Section------->
 <section id="about">
-	<div class="container">
-		<div class="row" >
-			<div style="text-align: center">
-				<div class="about-content" >
-                    <h4 style="font-size: 35px;" ><b><i>Jewellery made for you!</i></b></h4>
+    <div class="container">
+        <div class="row">
+            <div style="text-align: center">
+                <div class="about-content">
+                    <h4 style="font-size: 35px;"><b><i>Jewellery made for you!</i></b></h4>
                     <p style="font-family: Caveat, sans-serif; font-size: 25px;">Scintilla was created to boost her confidence and allow her to express her individuality through her choice of jewellery.</p>
-                    <p style="font-family: Caveat, sans-serif; font-size: 25px;" >Shining bright with a young team focused on innovation, customer happiness and transparency, Scintilla addresses the growing demands of today's always on-the-go consumers to discover, explore, buy and know more about their jewellery. Our policies provide easy returns, free shipping, BIS Hallmark, 100% certified jewellery, life-time exchange, best and transparent prices and unique designs all under one roof.</p>
-				</div>
-			</div>
-		</div>
-	</div>	
-
+                    <p style="font-family: Caveat, sans-serif; font-size: 25px;">Shining bright with a young team focused on innovation, customer happiness and transparency, Scintilla addresses the growing demands of today's always on-the-go consumers to discover, explore, buy and know more about their jewellery. Our policies provide easy returns, free shipping, BIS Hallmark, 100% certified jewellery, life-time exchange, best and transparent prices and unique designs all under one roof.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <br>
 
 <!-----Social Media Team------->
 <section id="team">
-	
-	<div class="container">
-		<h1 style="font-weight: 50px;"><b>Blog Posts</b></h1>
-		<div class="row">
-			<div class="col-md-3 profile-pic text-center">
-				<div class="img-box">
+    <div class="container">
+        <h1 style="font-weight: 50px;"><b>Blog Posts</b></h1>
+        <div class="row">
+            <div class="col-md-3 profile-pic text-center">
+                <div class="img-box">
                     <img src="https://imgs.search.brave.com/pngn0pg7y5uq4cnuvH_P8xZJW7pnLnel5pmQDG7zFIw/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by95/b3VuZy1tb2RlbC1k/ZW1vbnN0cmF0aW5n/LWdvbGRlbi1uZWNr/bGFjZV83NTAyLTcw/NDkuanBnP3NpemU9/NjI2JmV4dD1qcGc" class="img-responsive" width="200px">
-				</div>
+                </div>
                 <br>
-				<h2>Elsa Peretti</h2>
-			</div>		
-			<div class="col-md-3 profile-pic text-center">
-				<div class="img-box">
-				<img src="https://imgs.search.brave.com/yKHzyRC23an-va_ukZxaCmCPZy8Sn6f5ihRuH77giv8/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzM0Lzdj/LzM0LzM0N2MzNGZh/MjhmOGIxYzdiZDc3/M2E2YmQzYjY3MTRh/LmpwZw" class="img-responsive" width="200px">
-				</div>
+                <h2>Elsa Peretti</h2>
+            </div>
+            <div class="col-md-3 profile-pic text-center">
+                <div class="img-box">
+                    <img src="https://imgs.search.brave.com/yKHzyRC23an-va_ukZxaCmCPZy8Sn6f5ihRuH77giv8/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzM0Lzdj/LzM0LzM0N2MzNGZh/MjhmOGIxYzdiZDc3/M2E2YmQzYjY3MTRh/LmpwZw" class="img-responsive" width="200px">
+                </div>
                 <br>
-				<h2>Miyang Chan </h2>
-			</div>	
-			<div class="col-md-3 profile-pic text-center">
-				<div class="img-box">
-				<img src="https://imgs.search.brave.com/ayAPoOX8fCx-mPw-WyTiv80YvBFIiuRcposCqw8U_XA/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/aW5zdHlsZS5jb20v/dGhtYi90ZC1qVG5S/ZUpRQlJpWlhUVl9Z/RjQ3UmlxVEk9LzE1/MDB4MC9maWx0ZXJz/Om5vX3Vwc2NhbGUo/KTptYXhfYnl0ZXMo/MTUwMDAwKTpzdHJp/cF9pY2MoKS9HZXR0/eUltYWdlcy0xNDY4/NzcyMjc2LTljMzRk/YTU3MmZhMjQ2NTA5/MTFjMzljMmU2ZWZk/ZjllLmpwZw" class="img-responsive" width="200px">
-				</div>
+                <h2>Miyang Chan </h2>
+            </div>
+            <div class="col-md-3 profile-pic text-center">
+                <div class="img-box">
+                    <img src="https://imgs.search.brave.com/ayAPoOX8fCx-mPw-WyTiv80YvBFIiuRcposCqw8U_XA/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/aW5zdHlsZS5jb20v/dGhtYi90ZC1qVG5S/ZUpRQlJpWlhUVl9Z/RjQ3UmlxVEk9LzE1/MDB4MC9maWx0ZXJz/Om5vX3Vwc2NhbGUo/KTptYXhfYnl0ZXMo/MTUwMDAwKTpzdHJp/cF9pY2MoKS9HZXR0/eUltYWdlcy0xNDY4/NzcyMjc2LTljMzRk/YTU3MmZhMjQ2NTA5/MTFjMzljMmU2ZWZk/ZjllLmpwZw" class="img-responsive" width="200px">
+                </div>
                 <br>
-				<h2>Nina Davaluri</h2>			
-			</div>
-		</div>	
-	</div>
+                <h2>Nina Davaluri</h2>
+            </div>
+        </div>
+    </div>
 </section>
 <br>
-<!------COntact------------>	
-<section id="contact">	
-	
-	<div class="container">
-		<h1 style="font-weight: 50px;"><b>Get In Touch</b></h1>
-		<div class="row">
-			<div class="col-md-6">
-				<form class="contact-form">
-				<div class="form-group">
-				<input type="text" class="form-control" placeholder="Your Name..">
-				</div>
-				<div class="form-group">
-				<input type="number" class="form-control" placeholder="Phone no.">
-				</div>
-				<div class="form-group">
-				<input type="email" class="form-control" placeholder="Email..">
-				</div>
-				<div class="form-group">
-				<textarea class="form-control" rows="4" placeholder="Message.."></textarea>
-				</div>
-			
-				<button type="submit" class="btn btn-primary">Submit</button>
-				</form>
-			</div>
-			
-			</div>
-			
-		</div>
 
-	</div>
-
+<!------Contact------------>
+<section id="contact">
+    <div class="container">
+        <h1 style="font-weight: 50px;"><b>Get In Touch</b></h1>
+        <div class="row">
+            <div class="col-md-6">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Your Name..">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" class="form-control" placeholder="Phone no.">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Email..">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" rows="4" placeholder="Message.."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
 </section>
 
 </body>
