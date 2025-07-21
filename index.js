@@ -30,6 +30,33 @@ app.get("/signup", (req, res) => {
     res.render("signup");
 });
 
+// NEW: Add to Cart Route
+app.get("/cart", (req, res) => {
+    // This is a list of all available products on your site.
+    // In a real app, this would come from your database.
+    const allProducts = [
+        { id: "101", name: "Stylish T-Shirt", price: 499.00, image: "/images/tshirt.jpg" },
+        { id: "102", name: "Comfortable Jeans", price: 1299.00, image: "/images/jeans.jpg" },
+        { id: "103", name: "Classic Sneakers", price: 2499.00, image: "/images/sneakers.jpg" },
+        { id: "104", name: "Designer Watch", price: 4999.00, image: "/images/watch.jpg" }
+    ];
+
+    // Get the product ID from the URL (e.g., /cart?id=101)
+    const productId = req.query.id;
+    let itemToShow = null;
+
+    if (productId) {
+        // Find the product in our list that matches the ID from the URL
+        itemToShow = allProducts.find(p => p.id === productId);
+    }
+
+    // Render the cart page.
+    // If an item was found, pass it to the page. Otherwise, pass null.
+    res.render("cart", { 
+        cartItem: itemToShow
+    });
+});
+
 app.post("/signup", async (req, res) => {
     try {
         const existingUser = await collection.findOne({ name: req.body.firstname });
