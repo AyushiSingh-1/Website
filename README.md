@@ -2,7 +2,7 @@
 
 Welcome to Scintilla, a full-stack e-commerce web application built with Node.js, Express, and MongoDB. This project features a complete user authentication system and is deployed live on Vercel.
 
-**[View Live Demo](https://website-git-main-ayushisingh-1s-projects.vercel.app/)**
+**[View Live](https://website-git-main-ayushisingh-1s-projects.vercel.app/)**
 
 
 
